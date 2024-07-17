@@ -19,10 +19,11 @@ const userRoute = require("./routes/User");
 const adminRoute = require("./routes/admin");
 const postRoute  = require("./routes/Post")
 
-
+//cors
+app.use(cors());
 //cors
 app.use(cors({
-  origin : ["https://deploy-quickpost-api.vercel.app"],
+  origin : ["https://quickpost-io.onrender.com"],
   methods : ["POST","GET","DELETE","PUT"],
   credentials : true
 }))
@@ -31,8 +32,7 @@ app.use(cors({
 app.use(express.json());
 //cookie-parser
 app.use(cookieParser());
-//cors
-app.use(cors());
+
 //file-parser
 app.use(
   fileUpload({
