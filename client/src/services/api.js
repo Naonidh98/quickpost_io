@@ -1,4 +1,4 @@
-const BASE_URL = 'https://deploy-quickpost-api.vercel.app/api/v1'
+const BASE_URL = 'https://quickpost-io.onrender.com/api/v1'
 export const auth = {
   signup: BASE_URL + "/auth/signup",
   login: BASE_URL + "/auth/login",
