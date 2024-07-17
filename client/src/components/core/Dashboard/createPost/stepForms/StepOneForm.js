@@ -63,7 +63,7 @@ export const StepOneForm = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <div className="w-[90%] xl:w-[65%] my-2 mx-auto">
+        <div className="w-[97%] xl:w-[65%] my-2 mx-auto">
           <div>
             <form
               onSubmit={handleSubmit(submitHandler)}
